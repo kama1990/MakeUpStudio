@@ -1,190 +1,433 @@
-body {
-    font-family: "Roboto", Sans-serif;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: #ffffff;
+}
+
+
 
 .container {
-    /* max-width: 1200px; */
-    margin: auto;
-    padding: 0 20px;
-}
-
-footer {
-    background: 	#F5F5F5;
-    color: #333333;
-    padding: 50px 0;
-    text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #ffffff;
-    padding: 20px 0;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+.cosmetics-bg {
+	/* position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); */
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cosmetics-text {
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	
 }
 
-.logo {
-    padding-right: 14px;
-    max-width: 180px;
+.cosmetics-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #c2b280;
+	text-transform: uppercase;
+	transition: 1s;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.after-intro h3 {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 16px;
+	color: #434343;
+}
+.after-intro {
+	margin-bottom: 45px;
+}
+.intro-photo {
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	position: relative;
 }
 
-nav a {
-    color: #30343d;
-    font-weight: 700;
+.intro-photo img {
+	width: 100%;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 25%;
+	box-shadow: 0 0 1rem 0.7rem rgba(0, 0, 0, 0.2);
 }
-nav a:hover {
-    opacity: 0.6;
+.intro-text {
+	/* margin-right: 10%; */
+	text-align: center;
+	margin-top: 20px;
+}
+/* .description {
+	position: absolute;
+} */
+
+/* navigation */
+
+nav {
+	/* w hamurgerach nie używamy hight , będzie do zmiany! powinno byc flexbox */
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	line-height: 60px;
+	background-color: #ffffff;
+	text-align: center;
+	border-bottom: thick double #c2b280;
+	justify-content: space-between;
+	z-index: 10;
 }
 
-.button {
-    padding: 16px 30px;
-    display: inline-block;
-    letter-spacing: 2px;
-    font-weight: 600;
-    border-radius: 10px;
-    color:#c2b280;
-    /* background-color: #FFD700;
-    border: 1px solid #FFD700; */
-    background-color: none;
-    border: 1px solid #c2b280;
+.nav-items {
+	/* display: none; */
+	position: fixed;
+	display: grid;
+	font-size: 15px;
+	width: 100%;
+	list-style: none;
+	transition: 0.3s;
+	left: -500px;
 }
-.button:hover {
-    color:#fff;
-    background-color: #c2b280;
-    border-color: #c2b280;
+.nav-items a {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav-items a:hover {
+	opacity: 0.6;
+}
+/* powinien byc flexbox */
+.burger-icon {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	/* w nav mamy line-hight więc aby się wyśrodkowało podajemy taki sam */
+	line-height: 80px;
+	font-size: 30px;
+	background-color: transparent;
+	border: none;
+	color: #c2b280;
+	cursor: pointer;
+}
+.burger-icon .hide {
+	display: none;
+}
+
+.active {
+	transform: translateX(500px);
+	background-color:  #ffffff;
+	height: 350x;
+	border-bottom: thick double #c2b280;
+
+}
+
+/* .activeHeader {
+	opacity: 0;
+	transition: 1s;
+} */
+
+
+/* header */
+
+.header {
+	position: relative;
+	height: 330px;
+	background-image: url('../images/cosmetics-small.jpg');
+	background-size: cover;
+	
+}
+
+.main {
+	margin: 30px 0;
 }
 
 .intro {
-    margin-top: 80px;
-    padding: 50px 0;
-    background-color: rgba(146, 106, 232, 0);
+	margin: 30px auto;
 }
 
-.intro-content {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    place-items: center;
-    gap: 30px;
+/* o nas  */
+.info {
+	/* color: #686767; */
+	color: #939292;
+	font-size: 10px;
+	letter-spacing: 1px;
+	margin-top: 5px;
+	line-height: 1.7em;
+	margin-bottom: 10px;
+	text-align: justify;
+	font-weight: 100;
+	padding: 0 20px 0 20px;
+}
+/* photo avatar of owner */
+
+/* buttony */
+
+.social-icons {
+	text-align: center;
+	display: grid;
+	margin-top: auto;
+	margin: 0 0;
 }
 
-.intro p {
-    color: #686767;
-    font-size: 25px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    line-height: 1.7em;
-    margin-bottom: 10px;
-    text-align: justify;
-    font-weight: 200;
+.first-icons {
+	margin-bottom: 10px;
 }
 
-
-.intro img {
-    border-radius: 5%;
-    width: 80%;
-    border: 4px solid #c2b280;
+.social-icon .fa {
+	display: inline-flex;
+	margin: 5px 0;
+	/* color: white; */
+	/* background: #dce9f8; */
+	border: 1px solid #c2b280;
+	color: #c2b280;
+	font-size: 15px;
+	width: 25px;
+	height: 25px;
+	/* border: solid #DCE9F8; */
+	border-radius: 20%;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition-duration: 0.6s;
 }
 
-.about-social {
-    margin: 20px 0;
+.social-icon .fa:hover {
+	background-color: #c2b280;
+	color: #ffffff;
+	border: 1px solid #c2b280;
 }
 
-.about-social ul {
-    margin:  0;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-    list-style: none;
+.social-icon-text {
+	font-size: 10px;
+	color: #939292;
+	display: inline-flex;
+	margin-left: 5px;
 }
 
-.about-social a {
-    color: white;
-    background: #DCE9F8;
-    font-size: 25px;
-    width: 40px;
-    height: 40px;
-    /* border: solid #DCE9F8; */
-    border-radius: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button {
+	text-align: center;
+	padding: 7px;
+	font-size: 10px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	border-radius: 10px;
+	color: #c2b280;
+	/* background-color: #FFD700;
+  border: 1px solid #FFD700; */
+	background-color: none;
+	border: 1px solid #c2b280;
+	transition-duration: 0.6s;
+	margin-left: 60px;
+	margin-right: 60px;
 }
 
-.about-social a:hover {
-    background-color: #c2b280;
+.button:hover {
+	background-color: #c2b280;
+	color: #ffffff;
+	border: 1px solid #c2b280;
 }
 
-.after-intro-content {
-    display: grid;
-    grid-template-columns: 0.33fr 0.33fr 0.33fr;
-    /* place-items: center; */
-    gap: 100px;
+.secondary-button {
+	margin-top: 3%;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: #c2b280;
+	padding: 10px 20px 10px 20px;
 }
-.after-intro-content h2 {
-    text-align: justify;
-}
-
-.after-intro-content p {
-    color: #686767;
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    line-height: 28px;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-.icon-list {
-    margin: 20px 0;
+.contact {
+	margin-top: 15px;
+	margin-bottom: 35px;
+	text-align: center;
 }
 
-.icon-list ul {
-    margin:  0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
+/* footer */
+footer p {
+	padding: 15px 10px;
+	text-align: center;
+	background-color: #f5f5f5;
+	font-size: 10px;
 }
 
-.icon-list a {
-    color: #c2b280;
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 20px;
-    padding: 0;
+.beginning-img {
+	display: block;
+   	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30%;
 }
-.icon-list a:hover {
-    color: #6b5a28;
+
+.beginning {
+    animation: beginningAnimation 4s ease-in-out forwards; /* Ustawienie animacji dla elementu o klasie 'intro' */
 }
-.icon-list-text {
-    padding-left: -45px;
-    color: #686767;
-    font-size: 15px;
-    letter-spacing: 2px;
-    
+
+@keyframes beginningAnimation {
+    0% {
+        opacity: 0; /* Początkowy stan animacji - element jest niewidoczny */
+    }
+
+    50% {
+        opacity: 1; /* Stan połowy animacji - element staje się widoczny */
+    }
+
+    100% {
+        opacity: 0; /* Końcowy stan animacji - element znów staje się niewidoczny */
+    }
+}
+
+.panel {
+    opacity: 0; /* Początkowy stan dla elementu o klasie 'login-panel' - jest niewidoczny */
+}
+ 
+ .fade-in {
+    animation: panelAnimation 2s ease-in-out forwards; /*Ustawienie animacji dla elementu o klasie 'login-fade-in'  */
+} 
+
+@keyframes panelAnimation {
+    0% {
+        opacity: 0; /* Początkowy stan animacji - element jest niewidoczny */
+    }
+
+    50% {
+        opacity: 0; /* Stan połowy animacji - element pozostaje niewidoczny */
+    }
+
+    100% {
+        opacity: 1; /* Końcowy stan animacji - element staje się widoczny */
+    }
+}
+
+@media (min-width: 768px) {
+	.beginning-img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20%;
+	}
+	.burger-icon {
+		display: none;
+	}
+
+	/* .nav-items {
+		display: block;
+	} */
+	nav {
+		height: 80px;
+		line-height: 80px;
+	}
+	.active {
+		transform: translateX(0px)
+	}
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #434343;
+		/* transition: color 0.3s; w hover color !*/
+	}
+	.nav-items a:hover {
+		opacity: 0.6;
+	}
+	.nav-items {
+		display: flex;
+		justify-content: space-around;
+		left: 0;
+	}
+	.header {
+		height: 330px;
+		background-image: url('../images/cosmetics-big.jpg');
+		background-size: cover;
+	}
+	.cosmetics-text h1 {
+		font-size: 36px;
+	}
+	.info {
+		font-size: 15px;
+	}
+	.second-info {
+		font-size: 12px;
+	}
+	.intro-photo {
+		/* flex-direction: row; */
+		display: flex;
+	}
+	.intro-text {
+		display: grid;
+		text-align: center;
+	}
+	.intro-photo img {
+		width: 150%;
+	}
+	.social-icon .fa {
+		font-size: 20px;
+		width: 35px;
+		height: 35px;
+	}
+	.social-icon {
+		display: inline;
+		/* margin: 20px; */
+	}
+
+	.social-icons {
+		display: grid;
+	}
+
+	.button {
+		padding: 8px;
+		font-size: 15px;
+		font-weight: 500;
+		/* display: inline-flex; */
+		text-align: center;
+	}
+	.secondary-button {
+		padding: 20px 30px 20px 30px;
+	}
+	.description {
+		/* display: inline-block; */
+		display: flex;
+		width: 80%;
+		margin-top: 3%;
+		margin-left: 7%;
+	}
+	.social-icon-text {
+		font-size: 9px;
+	}
+	.description a {
+		margin-left: -10%;
+	}
+}
+@media (min-width: 992px) {
+	/* .social-icon {
+		display: none;
+	} */
+	.intro-text p {
+		/* margin-right: 10%; */
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.cosmetics-text h1 {
+		font-size: 42px;
+	}
+	.description {
+		/* display: inline-block; */
+		display: flex;
+		width: 50%;
+		margin-top: 3%;
+		margin-left: 7%;
+	}
 }

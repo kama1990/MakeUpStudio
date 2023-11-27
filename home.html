@@ -1,113 +1,116 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        MakeUpStudio
-    </title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> <!-- Importowanie czcionki Montserrat -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="styles.css" >
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <img src="/images/logo.png" alt="logo" class="logo">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="tab1.html">Tab 1</a>
-                        </li>
-                        <li>
-                            <a href="tab2.html">Tab 2</a>
-                        </li>
-                        <li>
-                            <a href="tab3.html">Tab 3</a>
-                        </li>
-                        <li>
-                            <a href="tab4.html">Tab 4</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MakeUpStudio</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://fontawesome.com/icons"/>
+		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<script defer src="script-intro.js"></script> 
+		<script async src="script.js"></script> 
+	</head>
+	<body>
+		<div id="beginning" class="beginning">
+			<img class="beginning-img" src="/images/logo.png">
+		</div>
+		<div id="panel" class="panel">
+			<nav>
+				<div class="container">
+					<!-- <div class="nav-logo">
+						<a href="home.html"><img src="/images/logo.png" alt="logo"></a>
+					</div> -->
+					<button class="burger-icon">
+						<i class="fa fa-bars"></i>
+						<i class="fa fa-times hide"></i>
+					</button>
+					<div class="nav-items">
+						<!-- <a href="home.html"><img src="/images/logo.png" alt="logo" class="nav-logo"></a> -->
+						<a href="#" class="nav-link">makijaż</a>
+						<a href="#" class="nav-link">oferta</a>
+						<a href="#" class="nav-link">szkolenia</a>
+						<a href="#" class="nav-link">kontakt</a>
+					</div>
+				</div>
+			</nav>
+			<header class="header">
+				<div class="cosmetics-bg"></div>
+				<div class="cosmetics-text">
+					<h1>Paulina Czajkowska</h1>
+				</div>
+			</header>
+			<main>
+				<section class="intro container">
+					<div class="intro-photo">
+						<img src="/images/neutalne.jpg" alt="Avatar of the website author">
+					
+						<div class="intro-text">
+							<p class="intro info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut?</p>
+							<p class="intro info">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus fugiat tempora suscipit dignissimos,
+								repellendus assumenda numquam animi nisi totam ratione saepe iste libero temporibus facilis adipisci
+								laudantium ducimus dolores illum.
+							</p>
+							<p class="intro info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut?Lorem ipsum dolor, sit amet consectetur adipisicing elit.  sit amet consectetur adipisicing elit. </p>
+							<div class="social-icon first-icons">
+								<a href="https://www.instagram.com/iam.paulinee/" target="_blank">
+								<i class="fa fa-instagram"></i>
+								</a>
+								<a href="https://www.facebook.com/paulinaczajkowskamakeupstudio" target="_blank">
+								<i class="fa fa-facebook"></i>
+								</a>
+							</div>
+							<a href="#" class="button">Dowiedz się więcej</a>
+						</div>
+					</div>
+				</section>
+				<section class="after-intros container">
+					<div class="description">
+						<div class="after-intro first-text">
+							<h3 class="after-intro section-title">social media</h3>
+							<p class="after-intro info second-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut?</p>
+							<div class="after-intro social-icon social-icons">
+								<a href="https://www.instagram.com/iam.paulinee/" target="_blank">
+								<i class="fa fa-instagram" ></i><span class="social-icon-text">@iam.paulinee</span>
+								</a>
+								<a href="https://www.facebook.com/paulinaczajkowskamakeupstudio" target="_blank">
+								<i class="fa fa-facebook"></i><span class="social-icon-text">Paulina Czajkowska Make Up Studio</span>
+								<!-- <span class="social-icon-text">Make Up Studio</span> -->
+								</a>
+							</div>
+						</div>
+						<div class="after-intro second-text">
+							<h3 class="after-info section-title">makijaże</h3>
+							<p class="after-intro info second-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut?</p>
+							<div class="after-intro social-icon social-icons">
+								<a href="https://www.instagram.com/iam.paulinee/" target="_blank">
+								<i class="fa fa-eye" ></i><span class="social-icon-text">oferta makijaży</span>
+								</a>
+							</div>
+						</div>
+						<div class="after-intro third-text">
+							<h3 class="after-intro section-title">szkolenia</h3>
+							<p class="after-intro info second-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, eaque aut?</p>
+							<div class="after-intro social-icon social-icons">
+								<a href="https://www.instagram.com/iam.paulinee/" target="_blank">
+								<i class="fa fa-pencil-square-o "></i></i><span class="social-icon-text">oferta szkoleń</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
 
-    <section class="intro">
-        <div class="container">
-            <div class="intro-content">
-                <div>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatem dignissimos cupiditate aspernatur esse. Sapiente fuga accusamus facere vel. Quo ab, eum nemo neque ut deleniti mollitia at saepe sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum necessitatibus dolore natus error nesciunt, ab adipisci nihil, aperiam provident explicabo dolor? Magnam, repudiandae! Atque, eaque? Ipsa nulla itaque dicta?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic labore quibusdam at accusantium, eum optio non eos dolores maxime ipsam reiciendis, corporis tempore atque voluptatem sapiente? Temporibus alias minima ipsam!</p>
-                    <div class="about-social">
-                        <ul>
-                            <li>
-                                <a href="https://www.instagram.com/iam.paulinee/" target="_blank">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/paulinaczajkowskamakeupstudio" target="_blank">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="button">Dowiedz się więcej</a> 
-                </div>
-                <img src="/images/intro.jpg" alt="Avatar of the website author">
-            </div>
-        </div>
-    </section>
+			<section class="contact container">
+				<a href="#" class="button secondary-button">wyślij zapytanie</a>
+			</section>
 
-    <section class="after-intro">
-        <div class="container">
-            <div class="after-intro-content">
-                <div>
-                    <h2>SOCIAL MEDIA</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia autem modi iusto a esse ut fugiat saepe necessitatibus maxime consectetur possimus, in repellendus aliquid eligendi labore dolore tempora voluptate? Nesciunt?</p>
-                    <div class="icon-list">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="https://www.instagram.com/iam.paulinee/" target="_blank">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <span class="icon-list-text">@iam.paulinee</span>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/paulinaczajkowskamakeupstudio" target="_blank">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <span class="icon-list-text">Paulina Czajkowska Make Up Studio</span>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div>
-                    <h2>MAKIJAŻE</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab dolor illo necessitatibus odio alias beatae ex. Repellendus fugiat cupiditate alias vel perspiciatis quaerat ducimus excepturi. Rem, culpa! Architecto, natus in.</p>
-                </div>
-                <div>
-                    <h2>SZKOLENIA</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda repellendus quia inventore dolore facilis voluptate aliquam explicabo, consectetur hic dignissimos, excepturi expedita molestiae! Culpa, rem quis sequi soluta atque mollitia?</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&#169; COPYRIGHT 2023 . ALL RIGHTS RESERVED</p>   
-        </div>
-    </footer>
-</body>
+			</main>
+			<footer>
+				<div class="container">
+					<p>&#169; COPYRIGHT 2023 . ALL RIGHTS RESERVED</p>   
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
-
-
-
